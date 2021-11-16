@@ -6,18 +6,19 @@ class Program
         var n = Convert.ToInt32(Console.ReadLine());
         var array = Array.ConvertAll(Console.ReadLine().Split(' '), s => int.Parse(s));
         int min = array[0];
+        int ind = 0;
         for (int i = 1; i < array.Length; i++)
         {
             if (min > array[i])
             {
                 min = array[i];
-
+                ind = i;
             }
 
 
 
 
         }
-        Console.WriteLine(min);
+        Console.WriteLine($"{min} {ind}");
     }
 }
