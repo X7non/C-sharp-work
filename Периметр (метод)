@@ -1,0 +1,16 @@
+using System;
+
+class Programm
+{
+    static void Perimetr (int a, int b, int c)
+    {
+        a = Convert.ToInt32(Console.ReadLine());
+        b = Convert.ToInt32(Console.ReadLine());
+        c = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(a + b + c);
+    }
+    static void Main(string[] args) {
+        int a = 0, b = 0, c = 0;
+        Perimetr(a, b, c);
+    }
+}
