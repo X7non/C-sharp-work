@@ -14,3 +14,20 @@ class Programm
         Perimetr(a, b, c);
     }
 }
+
+/*using System;
+
+class Programm
+{
+    static int Perimetr (int a, int b, int c)
+    {
+        a = int.Parse(Console.ReadLine());
+        b = int.Parse(Console.ReadLine());
+        c = int.Parse(Console.ReadLine());
+        return a + b + c;
+    }
+    static void Main(string[] args) {
+        int a = 0, b = 0, c = 0;
+        Console.WriteLine(Perimetr(a, b, c));
+    }
+}*/
