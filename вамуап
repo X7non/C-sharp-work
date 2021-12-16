@@ -1,0 +1,31 @@
+using System;
+
+class Programm
+{
+    static double LongGip (double a, double b)
+    {
+        Console.Write("Длина катета a: ");
+        a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Длина катета b: ");
+        b = Convert.ToInt32(Console.ReadLine());
+        return Math.Pow((Math.Pow(a, 2) + Math.Pow(b, 2)), 0.5);
+    }
+    static void Main(string[] args) {
+        double a = 0;
+        double b = 0;
+        double c = 0;
+        double d = 0;
+        c = LongGip(a, b);
+        d = LongGip(a, b);
+        if (c > d)
+        {
+            Console.WriteLine("Первая больше");
+        } else if (c == d)
+        {
+            Console.WriteLine("Гипотенузы равны");
+        } else
+        {
+            Console.WriteLine("Вторая больше");
+        }
+    }
+}
